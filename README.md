@@ -2,12 +2,18 @@
 
 This GitHub repository template provides a streamlined approach to Python package development using Docker. Instead of relying on traditional methods such as virtual environments or Anaconda, this template leverages Docker to create an exact environment described by the `requirements.txt` file, ensuring consistency across different development environments.
 
-#### Features:
-- **Docker-Based Environment**: Utilizes Docker to build and maintain a consistent development environment.
+### Prerequisites:
+
+You only need Docker Desktop installed on your machine. Yes, you can literally develop a Python package *without installing Python*! 
+
+Download Docker [here](https://www.docker.com/products/docker-desktop/). FYI, for commercial use Docker requires a small annual subscription fee.
+
+### Features:
+- **Containerized Environment**: Utilizes Docker to build and maintain a consistent, virtual development environment.
 - **Automated Testing**: Runs unit tests within a Docker container to ensure package integrity.
 - **Separate Build Container**: Includes a separate container for building `.whl` files, enhancing flexibility and modularity.
 
-#### Why Docker?
+### Why Docker?
 
 Docker offers several advantages over traditional development methods:
 
@@ -17,7 +23,7 @@ Docker offers several advantages over traditional development methods:
    
 3. **Portability**: Docker containers can be easily shared and deployed across different systems, making collaboration and deployment seamless.
 
-#### Usage:
+### Usage:
 
 Follow these steps to use the GitHub repository template:
 
