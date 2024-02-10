@@ -1,7 +1,7 @@
 # python integration tests
 
 import unittest
-import mypackage as p
+import mypackage as p  # import the package as a user who has just pip installed it
 
 
 class TestImporting(unittest.TestCase):

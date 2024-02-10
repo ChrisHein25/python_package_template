@@ -1,13 +1,15 @@
 # This is a system integration test to BUILD and TEST a Python package
 
 ##### User Inputs #####
-$imageName = "package_runner"  # package runner image name used for testing
 $packageDir = "mypackage"  # package top level directory
-$projDir = "python_plugin_template"  # project (repo) name
+$projDir = "python_package_template"  # project (repo) name
+
+#######################
+
+$imageName = "package_runner"  # package runner image name used for testing
 $pyTestFileName = "test_usage.py"  # python system testing file with usage tests
 $containerName = "SystemTestMyPackage"  # what to name the container running the system testing
 
-#######################
 
 # Main Script Steps:
 #  1. Build the .whl file (inputs in pyproject.toml)
