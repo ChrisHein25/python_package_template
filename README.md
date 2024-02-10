@@ -1,4 +1,4 @@
-# Python Package Template (in Docker)
+# Python Package Template (CI/CD with Docker)
 
 A generic template for Python package development.
 The package is tested via Docker.
