@@ -1,0 +1,16 @@
+[build-system]
+requires = ['setuptools']
+
+[project]
+name = 'mypackage'
+version = '0.0.1'
+description = 'description here'
+authors = [
+    {name = 'My Name', email = 'my.email@somewhere.com'}
+]
+readme = 'README.md'
+requires-python = ">=3.11"
+dynamic = ['dependencies']
+
+[tool.setuptools.dynamic]
+dependencies = {file = ['docker/requirements.txt']}

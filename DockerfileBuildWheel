@@ -1,0 +1,9 @@
+FROM python:3 as builder
+
+WORKDIR /
+
+COPY . .
+
+RUN pip install --upgrade setuptools wheel build
+
+RUN python -m build
