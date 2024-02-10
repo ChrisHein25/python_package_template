@@ -1,10 +1,26 @@
-# Python Package Template (CI/CD with Docker)
+# Python Package via Docker CI/CD
 
-A generic template for Python package development.
-The package is tested via Docker.
-The template includes pre-build PowerShell scripts to run the release testing.
+This GitHub repository template provides a streamlined approach to Python package development using Docker. Instead of relying on traditional methods such as virtual environments or Anaconda, this template leverages Docker to create an exact environment described by the `requirements.txt` file, ensuring consistency across different development environments.
 
-To use this template:
+#### Features:
+- **Docker-Based Environment**: Utilizes Docker to build and maintain a consistent development environment.
+- **Automated Testing**: Runs unit tests within a Docker container to ensure package integrity.
+- **Separate Build Container**: Includes a separate container for building `.whl` files, enhancing flexibility and modularity.
+
+#### Why Docker?
+
+Docker offers several advantages over traditional development methods:
+
+1. **Consistency**: Docker ensures that every developer works in the same environment regardless of their local setup, eliminating "it works on my machine" issues.
+   
+2. **Isolation**: With Docker containers, dependencies and libraries are isolated from the host system, preventing conflicts and ensuring reproducible builds.
+   
+3. **Portability**: Docker containers can be easily shared and deployed across different systems, making collaboration and deployment seamless.
+
+#### Usage:
+
+Follow these steps to use the GitHub repository template:
+
 1. Build a new GitHub repo and select this as the template.
 2. Rename the `src/mypackage` folder as your package name.
 3. Update the `$packageDir` and `$projDir` variables at the top of the PowerShell scripts.
