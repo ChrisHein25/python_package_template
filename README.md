@@ -12,4 +12,5 @@ To use this template:
 5. The CI/CD pipeline is working. You can now replace the python code in your new package.
 6. You will also want to update `test_usage.py` to reflect your new package name and system integration tests.
 
+OS-X friendly version coming out soon...
 
